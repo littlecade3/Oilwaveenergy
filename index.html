@@ -319,19 +319,7 @@ img { max-width: 100%; height: auto; display: block; }
   transition: var(--transition);
 }
 .team-card:hover .team-photo-wrap img { transform: scale(1.03); }
-.team-linkedin {
-  position: absolute; bottom: 12px; left: 12px;
-  width: 34px; height: 34px; background: #0077b5;
-  border-radius: 4px; display: flex; align-items: center; justify-content: center;
-  color: var(--white); text-decoration: none; font-size: 0.95rem;
-  transition: var(--transition); z-index: 2;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
-}
-.team-linkedin:hover { background: #005885; transform: scale(1.1); }
-.team-name {
-  text-align: center; padding: 16px 16px 10px;
-  font-size: 1.05rem; font-weight: 700; color: var(--navy);
-  background: var(--white);
+
 }
 .team-role {
   background: var(--navy); color: var(--white); text-align: center;
@@ -930,7 +918,7 @@ const teamMembers = [
     role: "Managing Director & CEO",
     photo: "https://i.imgur.com/c12VlOF.jpeg",
     bio: "Led by a career energy executive, our team across East Africa knows that for our clients to succeed they must be left to worry about their key business only while it is Oilwave's duty to give our clients the edge in expertise. A petroleum engineer by training and a man of unquestionable integrity with an uncommon tenacity and passion for success in business.",
-    work: ["Oil & Gas Industry (5 years)", "Supply Chain Operations", "Strategic Partnerships"],
+    work: ["Oil & Gas Industry (7 years)", "Supply Chain Operations", "Strategic Partnerships"],
     phone: "+254 742 684 858",
     email: "sadaq@oilwave.co.ke",
     linkedin: "#"
@@ -940,14 +928,14 @@ const teamMembers = [
     role: "Director",
     photo: "https://i.imgur.com/In0QXas.png",
     bio: "A seasoned petroleum logistics expert with 6+ years of experience. At Oilwave Energy Limited, he ensures efficient fuel movement, regulatory compliance, and client satisfaction. His expertise includes depot management, fleet coordination, and risk mitigation.",
-    work: ["Depot Management (6 years)", "Logistics Coordination", "EPRA Compliance"],
+    work: ["Depot Management (9 years)", "Logistics Coordination", "EPRA Compliance"],
     phone: "+254 713 177 774",
     email: "Abdulani@oilwave.co.ke",
     linkedin: "#"
   },
   {
     name: "Mr. Mohamed Abdi Muhumed",
-    role: "Supplier Manager",
+    role: "Supply Manager",
     photo: "https://i.imgur.com/nrmvKky.png",
     bio: "A zealous senior executive with a prolific career encompassing developing and implementing commercial strategies that drove sustainable growth, identifying and managing business opportunities as well as product development. Dedicated to spearheading the growth of Oilwave and establishing great relationships with its clientele.",
     work: ["B2B Sales (8+ years)", "Market Expansion", "Client Relations"],
@@ -960,7 +948,7 @@ const teamMembers = [
     role: "Sales Manager",
     photo: "https://i.imgur.com/B44ac0Q.png",
     bio: "Manages client communications, order processing, and service delivery coordination. Dedicated to ensuring every client experience exceeds expectations. Brings on board vast experience in customer service operations across the petroleum niche.",
-    work: ["Customer Service (6+ years)", "Order Management", "Client Support"],
+    work: ["Customer Service (5+ years)", "Order Management", "Client Support"],
     phone: "+254 728 696 655",
     email: "littlecade3@gmail.com",
     linkedin: "#"
@@ -983,9 +971,7 @@ function renderTeam() {
     <div class="team-card">
       <div class="team-photo-wrap">
         <img src="${member.photo}" alt="${member.name} - ${member.role}" loading="lazy">
-        <a href="${member.linkedin}" class="team-linkedin" target="_blank" rel="noopener" title="LinkedIn Profile">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
+        
       </div>
       <div class="team-name">${member.name}</div>
       <div class="team-role">${member.role}</div>
